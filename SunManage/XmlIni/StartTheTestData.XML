@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Config><!--启动Testing Args-->
+  <BasicBubblePoint><!-- 基本泡点-->
+    <Test_Psernum>P1201</Test_Psernum><!-- 生产批号-->
+    <Test_Fsernum>ABC</Test_Fsernum><!-- 滤芯num-->
+    <Test_startp>2800</Test_startp><!-- Start Pressure-->
+    <Test_setBp>3400</Test_setBp><!-- Min. BP-->
+    <Test_Meme_Aper>0.22</Test_Meme_Aper><!--Production Area-->
+    <Test_Velocity>Normal</Test_Velocity><!-- Test Mode-->
+    <Test_Tsernum>ABC123</Test_Tsernum><!-- 产品编号-->
+    <Test_filt>PES</Test_filt><!-- 滤材种类-->
+    <Test_Filter_Type>Cartridge</Test_Filter_Type><!-- Specification-->
+    <Test_Filter_Area>0.6000</Test_Filter_Area><!-- Filter Line-->
+    <Test_LIQU>Water</Test_LIQU><!-- Testing Liquid-->
+    <Test_LIQUConsistence>0</Test_LIQUConsistence><!-- Testing Liquid浓度-->
+    <Test_Filter_Config>10</Test_Filter_Config><!-- 过滤材料的规格（或平板滤器的直径）-->
+    <Test_Filter_number>1</Test_Filter_number> <!-- Testing过滤器滤芯的数量 -->
+    <Test_LIQUName>Water</Test_LIQUName><!-- Testing Liquid-->
+  </BasicBubblePoint>
+  <ManualBubblePoint><!-- Mannul.BP Test-->
+    <Test_Psernum>P102</Test_Psernum><!-- 生产批号-->
+    <Test_Fsernum>ABC</Test_Fsernum><!-- 滤芯num-->
+    <Test_setBp>3400</Test_setBp><!-- Min. BP-->
+    <Test_Velocity>0.1</Test_Velocity><!-- Inflation Length-->
+    <Test_Meme_Aper>0.22</Test_Meme_Aper><!--Production Area-->
+    <Test_startp>2800</Test_startp><!-- Start Pressure-->
+    <Test_Tsernum>ABC</Test_Tsernum><!-- 产品编号-->
+    <Test_filt>PES</Test_filt><!-- 滤材种类-->
+    <Test_Filter_Type>Cartridge</Test_Filter_Type> <!-- Specification-->
+    <Test_Filter_Area>0.6000</Test_Filter_Area><!-- Filter Line-->
+    <Test_LIQU>Water</Test_LIQU><!-- Testing Liquid-->
+    <Test_LIQUConsistence>0</Test_LIQUConsistence> <!-- Testing Liquid浓度-->
+    <Test_Filter_Config>10</Test_Filter_Config><!-- 过滤材料的规格（或平板滤器的直径）-->
+    <Test_Filter_number>1</Test_Filter_number><!-- Testing过滤器滤芯的数量 -->
+    <Test_LIQUName>Water</Test_LIQUName><!-- Testing Liquid-->
+  </ManualBubblePoint>
+  <DiffusionFlowCheck><!-- Testing.DF-->
+    <Test_Psernum>ABC</Test_Psernum> <!-- 生产批号-->
+    <Test_Fsernum>ABC</Test_Fsernum><!-- 滤芯num-->
+    <Test_startp>2800</Test_startp><!-- Start Pressure-->
+    <Test_Up_Volm>1800</Test_Up_Volm><!-- Upstream Volume-->
+    <Test_Meme_Aper>0.22</Test_Meme_Aper><!--Production Area-->
+    <Test_Dif_max>30.0</Test_Dif_max><!--Max. DF-->
+    <Test_Tsernum>ABC</Test_Tsernum><!-- 产品编号-->
+    <Test_filt>PES</Test_filt><!-- 滤材种类-->
+    <Test_Filter_Type>Cartridge</Test_Filter_Type><!-- Specification-->
+    <Test_Filter_Area>0.6000</Test_Filter_Area><!-- Filter Line-->
+    <Test_LIQU>Water</Test_LIQU><!-- Testing Liquid-->
+    <Test_LIQUConsistence>0</Test_LIQUConsistence> <!-- Testing Liquid浓度-->
+    <Test_Filter_Config>10</Test_Filter_Config><!-- 过滤材料的规格（或平板滤器的直径）-->
+    <Test_Filter_number>1</Test_Filter_number><!-- Testing过滤器滤芯的数量 -->
+    <Test_LIQUName>Water</Test_LIQUName><!-- Testing Liquid-->
+</DiffusionFlowCheck>
+  <RateOfRise><!-- Pressure Holding Test-->
+    <Test_Psernum>ABC</Test_Psernum><!-- 生产批号-->
+    <Test_Fsernum>ABC</Test_Fsernum><!-- 滤芯num-->
+    <Test_startp>2800</Test_startp><!-- Start Pressure-->
+    <Test_Velocity>5</Test_Velocity><!-- test_time-->
+    <Test_Meme_Aper>0.22</Test_Meme_Aper><!--Production Area-->
+    <Test_Tsernum>ABC</Test_Tsernum><!-- 产品编号-->
+    <Test_filt>PES</Test_filt><!-- 滤材种类-->
+    <Test_Filter_Type>Cartridge</Test_Filter_Type><!-- Specification-->
+    <Test_Filter_Area>0.6000</Test_Filter_Area><!-- Filter Line-->
+    <Test_LIQU>Water</Test_LIQU><!-- Testing Liquid-->
+    <Test_LIQUConsistence>0</Test_LIQUConsistence><!-- Testing Liquid浓度-->
+    <Test_Filter_Config>10</Test_Filter_Config><!-- 过滤材料的规格（或平板滤器的直径）-->
+    <Test_Filter_number>1</Test_Filter_number><!-- Testing过滤器滤芯的数量 -->
+    <Test_LIQUName>Water</Test_LIQUName><!-- Testing Liquid-->
+    </RateOfRise>
+  <WaterImmersionTest><!--Water Intrusion Test-->
+    <Test_Psernum>ABC</Test_Psernum><!-- 生产批号-->
+    <Test_Velocity>18</Test_Velocity><!-- Testing时长-->
+    <Test_Fsernum>ABC</Test_Fsernum><!-- 滤芯num-->
+    <Test_startp>2800</Test_startp><!-- Start Pressure-->
+    <Test_Up_Volm>1850</Test_Up_Volm><!-- Upstream Volume-->
+    <Test_Meme_Aper>0.22</Test_Meme_Aper><!--Production Area-->
+    <Test_Dif_max>0.75</Test_Dif_max><!--最大流量-->
+    <Test_Tsernum>ABC</Test_Tsernum><!-- 产品编号-->
+    <Test_filt>PES</Test_filt><!-- 滤材种类-->
+    <Test_Filter_Type>Cartridge</Test_Filter_Type><!-- Specification-->
+    <Test_Filter_Area>0.6000</Test_Filter_Area><!-- Filter Line-->
+    <Test_LIQU>Water</Test_LIQU><!-- Testing Liquid-->
+    <Test_LIQUConsistence>0</Test_LIQUConsistence><!-- Testing Liquid浓度-->
+    <Test_Filter_Config>10</Test_Filter_Config><!-- 过滤材料的规格（或平板滤器的直径）-->
+    <Test_Filter_number>1</Test_Filter_number><!-- Testing过滤器滤芯的数量 -->
+    <Test_LIQUName>Water</Test_LIQUName><!-- Testing Liquid-->
+   </WaterImmersionTest>
+  <StrengthenTheBubble><!-- Extensiv.BP Test-->
+    <Test_Psernum>ABC</Test_Psernum> <!-- 生产批号-->
+    <Test_Fsernum>ABC</Test_Fsernum><!-- 滤芯num-->
+    <Test_startp>2800</Test_startp><!-- Start Pressure-->
+    <Test_setBp>3400</Test_setBp><!-- Min. BP-->
+    <Test_Up_Volm>1850</Test_Up_Volm><!-- Upstream Volume-->
+    <Test_Meme_Aper>0.22</Test_Meme_Aper><!--Production Area-->
+    <Test_Dif_max>30.0</Test_Dif_max><!--Max. DF-->
+    <Test_Tsernum>ABC</Test_Tsernum><!-- 产品编号-->
+    <Test_filt>PES</Test_filt><!-- 滤材种类-->
+    <Test_Filter_Type>Cartridge</Test_Filter_Type><!-- Specification-->
+    <Test_Filter_Area>0.6000</Test_Filter_Area><!-- Filter Line-->
+    <Test_LIQU>Water</Test_LIQU><!-- Testing Liquid-->
+    <Test_LIQUConsistence>0</Test_LIQUConsistence><!-- Testing Liquid浓度-->
+    <Test_Filter_Config>10</Test_Filter_Config><!-- 过滤材料的规格（或平板滤器的直径）-->
+    <Test_Filter_number>1</Test_Filter_number><!-- Testing过滤器滤芯的数量 -->
+    <Test_LIQUName>Water</Test_LIQUName> <!-- Testing Liquid-->
+    </StrengthenTheBubble>
+  <SystemParameter> <!-- 系统参数-->
+    <PES_Dif_max>30.0</PES_Dif_max><!-- 单芯10“PES滤芯的Max. DF-2-->
+    <PVDF_Dif_max>20.0</PVDF_Dif_max><!-- 单芯10“尼龙滤芯的Max. DF-2-->
+    <PTFE_Dif_max>16.0</PTFE_Dif_max><!-- 单芯10“聚四氟乙烯滤芯的Max. DF - 2-->
+    <NYLON_Dif_max>18.0</NYLON_Dif_max><!-- 单芯10“尼龙滤芯的Max. DF-->
+    <OTHER_Dif_max>26.00</OTHER_Dif_max><!-- 单芯10“Other材质的DF-2-->
+    <Exter_Volm>0</Exter_Volm><!--外部缓冲罐的体积（0)- 4-->
+    <SourceP>6000</SourceP><!--外部的气源Pressure(6000) - 2-->
+    <AddP_extent>60</AddP_extent><!-- 对滤芯的Pressure增幅   (60)  - 2-->
+    <Print_setup>1</Print_setup> <!-- 打印设置  (1- 手动/ 0 - 自动打印)-->
+    <Over_Modesetup>1</Over_Modesetup><!-- Testing结束的方式  (1- 手动/ 0 - 自动)   - 1-->
+    <Language_setup>1</Language_setup><!-- 语言设置(1- 中文/ 0 – 英文)    - 1-->
+    <Default_Load>1</Default_Load><!-- 缺省值得Load(1- Load/ 0 – 保持)     - 1-->
+    <InitTestPara>1</InitTestPara><!-- 初始化Testing Args(1- Load/ 0 –清空)    - 1-->
+  </SystemParameter>
+ </Config>

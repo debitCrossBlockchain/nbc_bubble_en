@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="GB2312"?>
+<opml version="1.1">
+  <head>
+    <title>Integrity Test Instrument System</title>
+  </head>
+  <body>
+    <outline title="NodeList">
+      <outline title="Device01" />
+    </outline>
+  </body>
+</opml>

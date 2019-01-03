@@ -1,0 +1,1717 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;groupBox16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tBPTFE_Dif_max.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 15</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>915, 53</value>
+  </data>
+  <data name="groupBox7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 15</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="radioButtonOver_ModesetupM.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="comboBoxProject.Items11" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="&gt;&gt;tBOTHER_Dif_max.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Volume Of External Buffer Tank:</value>
+  </data>
+  <data name="label34.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOver_ModesetupM.Name" xml:space="preserve">
+    <value>radioButtonOver_ModesetupM</value>
+  </data>
+  <data name="radioButtonInitTestParaNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 19</value>
+  </data>
+  <data name="&gt;&gt;label50.Name" xml:space="preserve">
+    <value>label50</value>
+  </data>
+  <data name="tBPES_Dif_max.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;tBExter_Volm.Name" xml:space="preserve">
+    <value>tBExter_Volm</value>
+  </data>
+  <data name="pictureBoxSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 75</value>
+  </data>
+  <data name="comboBoxProject.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonLanguage_setupC.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="tBPES_Dif_max.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="tBExter_Volm.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 49</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>PESMax.DF:</value>
+  </data>
+  <data name="&gt;&gt;tBExter_Volm.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 64</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label33.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="pictureBoxWrite.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="radioButtonInitTestParaYes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 19</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 15</value>
+  </data>
+  <data name="&gt;&gt;tBPTFE_Dif_max.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pictureBoxRead.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 64</value>
+  </data>
+  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 78</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="comboBoxProject.Items" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="radioButtonOver_ModesetupM.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 15</value>
+  </data>
+  <data name="tBSourceP.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tBPTFE_Dif_max.Name" xml:space="preserve">
+    <value>tBPTFE_Dif_max</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="pictureBoxInquire.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 75</value>
+  </data>
+  <data name="groupBox16.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;comboBoxProject.Name" xml:space="preserve">
+    <value>comboBoxProject</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>OtherMax.F:</value>
+  </data>
+  <data name="radioButtonDefault_LoadNo.Text" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1052, 351</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;radioButtonLanguage_setupE.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>446, 78</value>
+  </data>
+  <data name="tBNYLON_Dif_max.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 25</value>
+  </data>
+  <data name="pictureBoxWrite.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxInquire.Parent" xml:space="preserve">
+    <value>groupBox16</value>
+  </data>
+  <data name="radioButtonLanguage_setupC.Text" xml:space="preserve">
+    <value>Chinese</value>
+  </data>
+  <data name="&gt;&gt;tBSourceP.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="comboBoxProject.Items15" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="groupBox5.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="groupBox2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;tBPVDF_Dif_max.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="tBPTFE_Dif_max.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 25</value>
+  </data>
+  <data name="comboBoxProject.Items10" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="radioButtonDefault_LoadNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 25</value>
+  </data>
+  <data name="radioButtonLanguage_setupE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 26</value>
+  </data>
+  <data name="comboBoxProject.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxInquire.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1052, 190</value>
+  </data>
+  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tBAddP_extent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 90</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOver_ModesetupA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButtonDefault_LoadYes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 126</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxProject.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label50.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pictureBoxRead.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 75</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 64</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButtonPrint_setupManual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 19</value>
+  </data>
+  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label27.Name" xml:space="preserve">
+    <value>label27</value>
+  </data>
+  <data name="tBExter_Volm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 25</value>
+  </data>
+  <data name="radioButtonOver_ModesetupA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 26</value>
+  </data>
+  <data name="&gt;&gt;tBPVDF_Dif_max.Name" xml:space="preserve">
+    <value>tBPVDF_Dif_max</value>
+  </data>
+  <data name="radioButtonInitTestParaNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 25</value>
+  </data>
+  <data name="&gt;&gt;tBSourceP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioButtonPrint_setupAuto.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="radioButtonPrint_setupManual.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="radioButtonInitTestParaNo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="radioButtonInitTestParaYes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonDefault_LoadNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 19</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxProject.Items6" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 64</value>
+  </data>
+  <data name="groupBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="radioButtonLanguage_setupE.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBoxProject.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 15</value>
+  </data>
+  <data name="groupBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>444, 126</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxRead.Parent" xml:space="preserve">
+    <value>groupBox16</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;tBAddP_extent.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 25</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 15</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>661, 126</value>
+  </data>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 15</value>
+  </data>
+  <data name="&gt;&gt;radioButtonLanguage_setupE.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 23</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="groupBox4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPrint_setupAuto.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="comboBoxProject.Items14" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 15</value>
+  </data>
+  <data name="comboBoxProject.Items9" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="radioButtonDefault_LoadNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tBAddP_extent.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="radioButtonDefault_LoadYes.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 64</value>
+  </data>
+  <data name="comboBoxProject.Items13" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="radioButtonPrint_setupAuto.Text" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="radioButtonInitTestParaNo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label34.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBoxInquire.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOver_ModesetupM.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="label50.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 15</value>
+  </data>
+  <data name="radioButtonPrint_setupAuto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 19</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>ml/min</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 78</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>ml/min</value>
+  </data>
+  <data name="radioButtonDefault_LoadNo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tBPES_Dif_max.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 82</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDefault_LoadNo.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxInquire.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="radioButtonOver_ModesetupA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 19</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="groupBox6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;tBAddP_extent.Name" xml:space="preserve">
+    <value>tBAddP_extent</value>
+  </data>
+  <data name="&gt;&gt;radioButtonLanguage_setupC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tBOTHER_Dif_max.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 15</value>
+  </data>
+  <data name="&gt;&gt;tBOTHER_Dif_max.Name" xml:space="preserve">
+    <value>tBOTHER_Dif_max</value>
+  </data>
+  <data name="groupBox4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPrint_setupAuto.Name" xml:space="preserve">
+    <value>radioButtonPrint_setupAuto</value>
+  </data>
+  <data name="&gt;&gt;radioButtonInitTestParaYes.Name" xml:space="preserve">
+    <value>radioButtonInitTestParaYes</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDefault_LoadYes.Parent" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="radioButtonLanguage_setupC.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox16.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="pictureBoxRead.Location" type="System.Drawing.Point, System.Drawing">
+    <value>257, 31</value>
+  </data>
+  <data name="groupBox7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>562, 49</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label34.Name" xml:space="preserve">
+    <value>label34</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAADFhYWAT4+Pgk4ODgHAAAAAAAA
+        AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdnZ2FGtraxoVFRUOAAAAFwAAAB0iIiJMTExMokVF
+        RZUmJiZPBAQEHQAAABMAAAAIAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARUVFDYiIiF54eHi9cHBw1jo6On8GBgY9DAwMSmVl
+        ZdGJiYn/fn5+/1paWuQbGxtmAAAAMgAAACkAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6Ojo2fn1+8YGBgf9/f3//bm5u+kFB
+        QaROTk6ubGxs/3x8fP90dHT/WFhY6xwcHGwDAwM3EBAPVRcXF1cPDw8uAAAAAgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACYmJgEW1tcAQ8PEC1mZmXeh4eH/3d3
+        d/9paWn/ZWVl/2BgYP9mZmb/eHh4/29vb/9VVVXxPDw8oz8/P5RcXFzLcHBv5WVlZcEwMDBVAgICBwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhYWELpmZmat8fHynTExMq2pq
+        au19fX7/dXV1/2ZmZv9ZWVn/U1NT/2dnZ/99fX3/dHR0/19fX/9iYmL/bWxt/3l5ef+EhIT/i4uL/3p6
+        etkICAgiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACLi4q+nZ2d/5ub
+        m/+JiYn/fHx9/4aGh/+Hh4f/bm5u/1VVVv9PT0//hoaG/8fHx/+7urv/kZGR/2BgYP9iYmL/cXBw/3l5
+        ef+BgYH/enp67gkJCTUAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI6N
+        jfOcnJ3/kpKT/319ff+ioqL/w8PC/7W1tf+enp//amtr/3Jxcv/Gxsb/7u7u/+bl5v+fn5//VFRU/2Bf
+        YP9tbG3/dnZ2/4CAgP93d3fmCAgIOAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAjo6O6Z2env+UlZX/fX19/5GRkf/Gxsb/ycnJ/8bGxv+0tbX/v76//93d3P/k5eT/6uvq/7W0
+        tP9qaWn/a2ts/4KCg/+NjY3/hISE/3p6euwPDw8zAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAACKioroj4+P/4qLi/9/f3//jY2N/7m5uf/Ly8r/0tLS/+fn5//09PT/+Pf3//T0
+        9P/v8O//5eXl/8G/v/+8u7v/y8zM/83Nzf+jo6P/dnZ17Q0NDSQAAAAAAAAAAAAAAAAAAAAQAAAAOwAA
+        AGwAAAB2AAAAUAAAACAAAAAAAAAAAI6Oju+0tLT/s7Oz/6mpqf+1tbX/yMjH/9HR0f/f4N//xsfG/6Ki
+        ov+4uLj/6urq//z8/P/o6er/5OTk/9/f3//R0ND+pqam/35/f/9rbGzOBQUFDwAAAAAAAAAAmpOJNKOH
+        WrPBiTHp2IYH/byFL++Hb0rYLy0qqQAAADYAAAAAi4uLpbW0tP/Pz8//19fX/83NzP/Q0M//3t7e/8PD
+        w/9fX1//OTk5/0pKSv98fHz/5eXn/+7u7v/Y2Nf/09TU/6enp/5oaGj+Xl5f/2psa74TExMJAAAAAM3D
+        tCfDlEvE6Zkb//WrNf/+t0b/9as1/+mZG/+lfkDnLy0pqQAAACCNjIw5kpKT+ZSUlP/AwMD/4+Tk/9nZ
+        2v/n6Oj/sbGx/0BAQP8uLi//REVF/1pZWv/Ew8T/8PDx/87Ozv/Nzc3/ubm5/5CQkP99fX7/eXl51HR0
+        dA8AAAAA2LF2h+mZG//+uEf//7lJ//+5Sf//uUn//rhH/+mZG/+Hb0rYAAAAUJybmzuYl5j5kpOT/8PD
+        w//w8PD/5ubm/+np6f/k5OP/o6Sk/21ubv9ub2//n5+f/93c3P/d3d3/yMfI/8LCwv+9vb3/u7q7/7Cw
+        sP+LiovrhISEEgAAAADamjbO86w6//64Sf//uUn//7lJ//+5Sf//uUn/9as1/7yELu8AAAB2hYWFQqOi
+        ov/Z2tr/8/T0/+jo6P/l5eX/7u3t//Hy8f/p6er/1dXV/8vLy//Z2tn/2tra/8rKyf+5urn/lpaW/4mJ
+        id2Tk5PElpaWyoWFhWx8fHwDAAAAANuIB/n6yn3//r5c//+5Sv//uUn//7lJ//+5Sf/+t0b/2IYH/QAA
+        AGx6e3oapKSku+Dg4P/Cw8P/qamp3aenp9fb3Nz47u7u/+Xl5f/l5eX/2tra/9LS0v/Nzs3/wcLB/6mp
+        qv9tbGz/YmFhh35+fiB/f38kAAAAAAAAAAAAAAAA3p02yfvdrv/8xmz//r5U//+5Sf//uUn//7lJ//Wr
+        Nf/Ahy/pAAAAOwAAAACKioonjo6OhISEhG5/f38wdnZ2VLGxseLp6en/4ODg/83Nzf+enp7YnZ2d2M3O
+        zf/V1dX/uLi5/4eGhv9lZWWAAAAAAAAAAAAAAAAAAAAAAAAAAADnvXx96Zkb//rapf/8xWz//b9Z//65
+        Sf/+uEf/6Zkb/6GEVrMAAAAQAAAAAAAAAAB5eXkFAAAAAAAAAAB1dXU8rKys6+Dh4f/U1dT/oKCg6nt7
+        ezR9fn0ymJiYu8DAwP+0tLT/jY2N5Hp6elEAAAAAAAAAAAAAAAAAAAAAAAAAAPXm0iDjq1Sn6Zkb//vh
+        uf/7z4f/9Ks2/+mZG//CkkjEl46BNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH9/fxqKiop2mJiYtJOT
+        k8aCgoJhAAAAAAAAAAB/f38fh4eHf4eHh3+CgoIpgICABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPTk
+        0CDht3aA3Zs0ytuIB/nYmDPO1a1wh8i7qicAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAAAALQAA
+        AGQAAABwAAAARAAAABMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABG6l
+        roU4s8zgCs33/DWrw+tHanDOAAAAcQAAABMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AACIytVsBdj8+wDs//8A+v//AOz//wXX+v1HanDOAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAEHO6sIA7P//Afz//wD8//8A/P//AOz//zWqwusAAABwAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAACtL99mj6//8U+///APz//wD8//8A+v//Cs33/AAAAGQAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABC1PG8r/n//yr6//8M/P//APz//wDs//83scrgAAAALQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAPAAAAQAAAAHMAAABWAAAAIYzP2WcF2v35z/v//6L8//8A7P//Bdj7+2yg
+        qIUAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAqJ+lIlpVnKskIbXuIyGx8kVBetkkIiSfAAAAIZDU3mRC1PC7CdL99kDM
+        6cKGxc9sAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABsZbyNCAja/xMT8P8SEvH/CAja/0ZCetkAAABWAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACYkw9sSEvH/GRn9/xgX/v8SEvH/IiGx8gAA
+        AHMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJiTG2Hl49v8hIv7/GRn9/xIS
+        8f8jIbTuAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB1bcmBCAja/3h4
+        9v8TE/D/CAja/1hSmKsAAAAPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANjJ
+        zRp0bMiBJiPF2CYjw9toYbeNpZqdIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA/wX///gAP//gAD//4AAP/4AAB/8AAAf/AAAD/wAAA/8AAAP/AAAHAwAA
+        BgEAAAQAAAAEAAAABAAAAAQAAAAcAIAAfADYAHwB+DB+A///4H///8A////AP///wD///8A////AP//4
+        AD//8AB///Af///wH///8B////Af///wP/8=
+</value>
+  </data>
+  <data name="radioButtonOver_ModesetupA.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;radioButtonLanguage_setupC.Name" xml:space="preserve">
+    <value>radioButtonLanguage_setupC</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 15</value>
+  </data>
+  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="comboBoxProject.Items18" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="radioButtonOver_ModesetupA.Text" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="&gt;&gt;tBPVDF_Dif_max.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxProject.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label27.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxSave.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>ml/min</value>
+  </data>
+  <data name="comboBoxProject.Items17" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;label50.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="radioButtonDefault_LoadYes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox16.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>415, 104</value>
+  </data>
+  <data name="label21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="comboBoxProject.Items12" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="tBPVDF_Dif_max.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>Filter Pressure Scale Up:</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxInquire.Name" xml:space="preserve">
+    <value>pictureBoxInquire</value>
+  </data>
+  <data name="radioButtonPrint_setupManual.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tBNYLON_Dif_max.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButtonDefault_LoadYes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 19</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="label34.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 36</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOver_ModesetupA.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tBNYLON_Dif_max.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="pictureBoxRead.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 15</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPrint_setupManual.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;radioButtonLanguage_setupE.Name" xml:space="preserve">
+    <value>radioButtonLanguage_setupE</value>
+  </data>
+  <data name="&gt;&gt;tBPES_Dif_max.Name" xml:space="preserve">
+    <value>tBPES_Dif_max</value>
+  </data>
+  <data name="comboBoxProject.Items2" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 125</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 36</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;radioButtonLanguage_setupE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPrint_setupManual.Name" xml:space="preserve">
+    <value>radioButtonPrint_setupManual</value>
+  </data>
+  <data name="&gt;&gt;radioButtonLanguage_setupC.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="pictureBoxWrite.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxWrite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label50.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="groupBox8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;radioButtonInitTestParaNo.Name" xml:space="preserve">
+    <value>radioButtonInitTestParaNo</value>
+  </data>
+  <data name="&gt;&gt;label34.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxWrite.Parent" xml:space="preserve">
+    <value>groupBox16</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Project:</value>
+  </data>
+  <data name="tBOTHER_Dif_max.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 70</value>
+  </data>
+  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>454, 36</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxRead.Name" xml:space="preserve">
+    <value>pictureBoxRead</value>
+  </data>
+  <data name="&gt;&gt;label33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label31.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="radioButtonPrint_setupManual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 25</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPrint_setupManual.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;comboBoxProject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxProject.Items5" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;label50.Parent" xml:space="preserve">
+    <value>groupBox16</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;tBSourceP.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Name" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="tBAddP_extent.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="tBExter_Volm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label31.Name" xml:space="preserve">
+    <value>label31</value>
+  </data>
+  <data name="&gt;&gt;groupBox8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBoxProject.Items16" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="tBSourceP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>769, 48</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>NYLONMax.DF:</value>
+  </data>
+  <data name="pictureBoxInquire.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="tBOTHER_Dif_max.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;groupBox16.Name" xml:space="preserve">
+    <value>groupBox16</value>
+  </data>
+  <data name="radioButtonOver_ModesetupM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 26</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBoxWrite.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 31</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPrint_setupAuto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tBPVDF_Dif_max.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 25</value>
+  </data>
+  <data name="groupBox6.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDefault_LoadNo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="comboBoxProject.Items8" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="radioButtonPrint_setupManual.Text" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 15</value>
+  </data>
+  <data name="&gt;&gt;tBPVDF_Dif_max.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label50.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 129</value>
+  </data>
+  <data name="radioButtonOver_ModesetupA.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxSave.Parent" xml:space="preserve">
+    <value>groupBox16</value>
+  </data>
+  <data name="&gt;&gt;tBOTHER_Dif_max.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tBSourceP.Name" xml:space="preserve">
+    <value>tBSourceP</value>
+  </data>
+  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 64</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOver_ModesetupM.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDefault_LoadYes.Name" xml:space="preserve">
+    <value>radioButtonDefault_LoadYes</value>
+  </data>
+  <data name="&gt;&gt;radioButtonInitTestParaYes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="radioButtonLanguage_setupE.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonLanguage_setupE.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tBSourceP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 25</value>
+  </data>
+  <data name="radioButtonLanguage_setupC.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="groupBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>853, 126</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>mSystemParameter</value>
+  </data>
+  <data name="radioButtonPrint_setupAuto.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;radioButtonInitTestParaYes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 15</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="tBPTFE_Dif_max.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="tBPES_Dif_max.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 29</value>
+  </data>
+  <data name="radioButtonOver_ModesetupM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 19</value>
+  </data>
+  <data name="radioButtonDefault_LoadYes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 26</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOver_ModesetupA.Name" xml:space="preserve">
+    <value>radioButtonOver_ModesetupA</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 15</value>
+  </data>
+  <data name="groupBox16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1044, 139</value>
+  </data>
+  <data name="radioButtonInitTestParaYes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;tBPTFE_Dif_max.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButtonDefault_LoadYes.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxWrite.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tBNYLON_Dif_max.Name" xml:space="preserve">
+    <value>tBNYLON_Dif_max</value>
+  </data>
+  <data name="radioButtonLanguage_setupC.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Essential Parameter</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>mbar</value>
+  </data>
+  <data name="tBNYLON_Dif_max.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;tBOTHER_Dif_max.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 29</value>
+  </data>
+  <data name="&gt;&gt;comboBoxProject.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;tBPTFE_Dif_max.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>Load Default Values</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPrint_setupAuto.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label27.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="radioButtonInitTestParaNo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDefault_LoadNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="tBPVDF_Dif_max.Location" type="System.Drawing.Point, System.Drawing">
+    <value>564, 29</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="radioButtonOver_ModesetupM.Text" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOver_ModesetupA.Parent" xml:space="preserve">
+    <value>groupBox6</value>
+  </data>
+  <data name="&gt;&gt;groupBox16.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Max. DF Args</value>
+  </data>
+  <data name="groupBox8.Text" xml:space="preserve">
+    <value>Initialize Test Args</value>
+  </data>
+  <data name="pictureBoxSave.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="label50.Location" type="System.Drawing.Point, System.Drawing">
+    <value>711, 40</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label33.Name" xml:space="preserve">
+    <value>label33</value>
+  </data>
+  <data name="groupBox5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="pictureBoxRead.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>ml</value>
+  </data>
+  <data name="&gt;&gt;tBAddP_extent.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Print set</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxSave.Name" xml:space="preserve">
+    <value>pictureBoxSave</value>
+  </data>
+  <data name="&gt;&gt;groupBox8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>ml/min</value>
+  </data>
+  <data name="radioButtonOver_ModesetupM.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tBExter_Volm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1052, 541</value>
+  </data>
+  <data name="comboBoxProject.Items1" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;radioButtonInitTestParaYes.Parent" xml:space="preserve">
+    <value>groupBox8</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 190</value>
+  </data>
+  <data name="label25.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;radioButtonInitTestParaNo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDefault_LoadYes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;tBPES_Dif_max.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>Language set</value>
+  </data>
+  <data name="&gt;&gt;tBAddP_extent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 15</value>
+  </data>
+  <data name="pictureBoxInquire.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>PVDFMax.DF:</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPrint_setupManual.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tBPES_Dif_max.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButtonPrint_setupAuto.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label20.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="tBNYLON_Dif_max.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDefault_LoadYes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox8.Name" xml:space="preserve">
+    <value>groupBox8</value>
+  </data>
+  <data name="&gt;&gt;radioButtonOver_ModesetupM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBoxSave.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="comboBoxProject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 21</value>
+  </data>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>End Of Test Mode</value>
+  </data>
+  <data name="label31.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="radioButtonLanguage_setupE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 19</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxProject.Items4" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pictureBoxSave.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="groupBox7.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxRead.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButtonInitTestParaYes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 26</value>
+  </data>
+  <data name="radioButtonPrint_setupAuto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 26</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>383, 93</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="label33.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;groupBox16.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="label21.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="tBPVDF_Dif_max.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>447, 51</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 126</value>
+  </data>
+  <data name="groupBox8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>SystemParameter</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox7.Name" xml:space="preserve">
+    <value>groupBox7</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxRead.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>ml/min</value>
+  </data>
+  <data name="radioButtonInitTestParaYes.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="tBOTHER_Dif_max.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 25</value>
+  </data>
+  <data name="&gt;&gt;label33.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="label25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 15</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>mbar</value>
+  </data>
+  <data name="label27.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxWrite.Name" xml:space="preserve">
+    <value>pictureBoxWrite</value>
+  </data>
+  <data name="&gt;&gt;groupBox6.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="groupBox16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 208</value>
+  </data>
+  <data name="comboBoxProject.Items7" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="radioButtonOver_ModesetupA.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>721, 36</value>
+  </data>
+  <data name="pictureBoxInquire.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 31</value>
+  </data>
+  <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="pictureBoxSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 31</value>
+  </data>
+  <data name="radioButtonLanguage_setupC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 19</value>
+  </data>
+  <data name="tBExter_Volm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>291, 46</value>
+  </data>
+  <data name="radioButtonDefault_LoadNo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="radioButtonPrint_setupManual.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;radioButtonInitTestParaNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tBPTFE_Dif_max.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 121</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 15</value>
+  </data>
+  <data name="&gt;&gt;groupBox8.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 95</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label50.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButtonLanguage_setupE.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tBExter_Volm.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>External Source Pressure:</value>
+  </data>
+  <data name="&gt;&gt;radioButtonDefault_LoadNo.Name" xml:space="preserve">
+    <value>radioButtonDefault_LoadNo</value>
+  </data>
+  <data name="tBSourceP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="pictureBoxWrite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 75</value>
+  </data>
+  <data name="groupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="radioButtonInitTestParaNo.Text" xml:space="preserve">
+    <value>NO</value>
+  </data>
+  <data name="tBNYLON_Dif_max.Location" type="System.Drawing.Point, System.Drawing">
+    <value>565, 70</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tBPES_Dif_max.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 25</value>
+  </data>
+  <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonLanguage_setupC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 26</value>
+  </data>
+  <data name="&gt;&gt;radioButtonInitTestParaNo.Parent" xml:space="preserve">
+    <value>groupBox8</value>
+  </data>
+  <data name="tBAddP_extent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 25</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>PTFEMax.DF:</value>
+  </data>
+  <data name="&gt;&gt;tBNYLON_Dif_max.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="radioButtonInitTestParaYes.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en-US</value>
+  </metadata>
+</root>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetWIT" targetNamespace="http://tempuri.org/DataSetWIT.xsd" xmlns:mstns="http://tempuri.org/DataSetWIT.xsd" xmlns="http://tempuri.org/DataSetWIT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetWIT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetWIT" msprop:Generator_UserDSName="DataSetWIT">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableWIT" msprop:Generator_TableClassName="DataTableWITDataTable" msprop:Generator_TableVarName="tableDataTableWIT" msprop:Generator_RowChangedName="DataTableWITRowChanged" msprop:Generator_TablePropName="DataTableWIT" msprop:Generator_RowDeletingName="DataTableWITRowDeleting" msprop:Generator_RowChangingName="DataTableWITRowChanging" msprop:Generator_RowEvHandlerName="DataTableWITRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableWITRowDeleted" msprop:Generator_RowClassName="DataTableWITRow" msprop:Generator_UserTableName="DataTableWIT" msprop:Generator_RowEvArgName="DataTableWITRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Test_Psernum" msprop:Generator_ColumnVarNameInTable="columnTest_Psernum" msprop:Generator_ColumnPropNameInRow="Test_Psernum" msprop:Generator_ColumnPropNameInTable="Test_PsernumColumn" msprop:Generator_UserColumnName="Test_Psernum" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_Velocity" msprop:Generator_ColumnVarNameInTable="columnTest_Velocity" msprop:Generator_ColumnPropNameInRow="Test_Velocity" msprop:Generator_ColumnPropNameInTable="Test_VelocityColumn" msprop:Generator_UserColumnName="Test_Velocity" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_Fsernum" msprop:Generator_ColumnVarNameInTable="columnTest_Fsernum" msprop:Generator_ColumnPropNameInRow="Test_Fsernum" msprop:Generator_ColumnPropNameInTable="Test_FsernumColumn" msprop:Generator_UserColumnName="Test_Fsernum" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_startp" msprop:Generator_ColumnVarNameInTable="columnTest_startp" msprop:Generator_ColumnPropNameInRow="Test_startp" msprop:Generator_ColumnPropNameInTable="Test_startpColumn" msprop:Generator_UserColumnName="Test_startp" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_Up_Volm" msprop:Generator_ColumnVarNameInTable="columnTest_Up_Volm" msprop:Generator_ColumnPropNameInRow="Test_Up_Volm" msprop:Generator_ColumnPropNameInTable="Test_Up_VolmColumn" msprop:Generator_UserColumnName="Test_Up_Volm" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_Meme_Aper" msprop:Generator_ColumnVarNameInTable="columnTest_Meme_Aper" msprop:Generator_ColumnPropNameInRow="Test_Meme_Aper" msprop:Generator_ColumnPropNameInTable="Test_Meme_AperColumn" msprop:Generator_UserColumnName="Test_Meme_Aper" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_Tsernum" msprop:Generator_ColumnVarNameInTable="columnTest_Tsernum" msprop:Generator_ColumnPropNameInRow="Test_Tsernum" msprop:Generator_ColumnPropNameInTable="Test_TsernumColumn" msprop:Generator_UserColumnName="Test_Tsernum" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_filt" msprop:Generator_ColumnVarNameInTable="columnTest_filt" msprop:Generator_ColumnPropNameInRow="Test_filt" msprop:Generator_ColumnPropNameInTable="Test_filtColumn" msprop:Generator_UserColumnName="Test_filt" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_Filter_Config" msprop:Generator_ColumnVarNameInTable="columnTest_Filter_Config" msprop:Generator_ColumnPropNameInRow="Test_Filter_Config" msprop:Generator_ColumnPropNameInTable="Test_Filter_ConfigColumn" msprop:Generator_UserColumnName="Test_Filter_Config" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_Filter_Area" msprop:Generator_ColumnVarNameInTable="columnTest_Filter_Area" msprop:Generator_ColumnPropNameInRow="Test_Filter_Area" msprop:Generator_ColumnPropNameInTable="Test_Filter_AreaColumn" msprop:Generator_UserColumnName="Test_Filter_Area" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_LIQU" msprop:Generator_ColumnVarNameInTable="columnTest_LIQU" msprop:Generator_ColumnPropNameInRow="Test_LIQU" msprop:Generator_ColumnPropNameInTable="Test_LIQUColumn" msprop:Generator_UserColumnName="Test_LIQU" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_Dif_max" msprop:Generator_ColumnVarNameInTable="columnTest_Dif_max" msprop:Generator_ColumnPropNameInRow="Test_Dif_max" msprop:Generator_ColumnPropNameInTable="Test_Dif_maxColumn" msprop:Generator_UserColumnName="Test_Dif_max" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_Num" msprop:Generator_ColumnVarNameInTable="columnTest_Num" msprop:Generator_ColumnPropNameInRow="Test_Num" msprop:Generator_ColumnPropNameInTable="Test_NumColumn" msprop:Generator_UserColumnName="Test_Num" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_Time" msprop:Generator_ColumnVarNameInTable="columnTest_Time" msprop:Generator_ColumnPropNameInRow="Test_Time" msprop:Generator_ColumnPropNameInTable="Test_TimeColumn" msprop:Generator_UserColumnName="Test_Time" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_DifValue" msprop:Generator_ColumnVarNameInTable="columnTest_DifValue" msprop:Generator_ColumnPropNameInRow="Test_DifValue" msprop:Generator_ColumnPropNameInTable="Test_DifValueColumn" msprop:Generator_UserColumnName="Test_DifValue" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_Result" msprop:Generator_ColumnVarNameInTable="columnTest_Result" msprop:Generator_ColumnPropNameInRow="Test_Result" msprop:Generator_ColumnPropNameInTable="Test_ResultColumn" msprop:Generator_UserColumnName="Test_Result" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_Name" msprop:Generator_ColumnVarNameInTable="columnTest_Name" msprop:Generator_ColumnPropNameInRow="Test_Name" msprop:Generator_ColumnPropNameInTable="Test_NameColumn" msprop:Generator_UserColumnName="Test_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Test_DeviceName" msprop:Generator_ColumnVarNameInTable="columnTest_DeviceName" msprop:Generator_ColumnPropNameInRow="Test_DeviceName" msprop:Generator_ColumnPropNameInTable="Test_DeviceNameColumn" msprop:Generator_UserColumnName="Test_DeviceName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableWITPT" msprop:Generator_TableClassName="DataTableWITPTDataTable" msprop:Generator_TableVarName="tableDataTableWITPT" msprop:Generator_RowChangedName="DataTableWITPTRowChanged" msprop:Generator_TablePropName="DataTableWITPT" msprop:Generator_RowDeletingName="DataTableWITPTRowDeleting" msprop:Generator_RowChangingName="DataTableWITPTRowChanging" msprop:Generator_RowEvHandlerName="DataTableWITPTRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableWITPTRowDeleted" msprop:Generator_RowClassName="DataTableWITPTRow" msprop:Generator_UserTableName="DataTableWITPT" msprop:Generator_RowEvArgName="DataTableWITPTRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DataPressure" msprop:Generator_ColumnVarNameInTable="columnDataPressure" msprop:Generator_ColumnPropNameInRow="DataPressure" msprop:Generator_ColumnPropNameInTable="DataPressureColumn" msprop:Generator_UserColumnName="DataPressure" type="xs:int" minOccurs="0" />
+              <xs:element name="DataTime" msprop:Generator_ColumnVarNameInTable="columnDataTime" msprop:Generator_ColumnPropNameInRow="DataTime" msprop:Generator_ColumnPropNameInTable="DataTimeColumn" msprop:Generator_UserColumnName="DataTime" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
