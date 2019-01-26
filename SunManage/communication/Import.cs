@@ -87,7 +87,7 @@ namespace SunManage.communication
                                     break;
                                 case "H":
                                     {
-                                        Htest_type = "Water Immersion ";
+                                        Htest_type = "Water Immersion";
                                     }
                                     break;
                                 case "d":

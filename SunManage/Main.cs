@@ -575,272 +575,137 @@ namespace SunManage
                         column.DefinedSize = 50;
                         column.Properties["AutoIncrement"].Value = false;
                         column.Properties["Jet OLEDB:Allow Zero Length"].Value = true;
-                        //                        //column.Properties["Jet OLEDB:Allow Zero Length"].Value = true;
-                        //                        struct TTest_Param               // ------ 107
-                        //{
-                        //  unsigned char      Test_type;               // Testing mode      -- 1                    
-                        //  unsigned char      Test_Psernum[16];        // product_batch_NO      -- 16 
-                        //  unsigned char      Test_Tsernum[16];        // Testingnum      -- 16   
-                        //  unsigned char      Test_PPsernum[16];       // 产品编号      -- 16   
-                        //  unsigned char      Test_Fsernum[16];        // Filter Serial Number     --  16
-                        //  unsigned char      Test_filt[16];           // Filter Material Type     --  16
-                        //  unsigned char      Test_LIQU[15];           // Testing Liquid      -- 15
-                        //  unsigned char      Test_Dt[5];              // Date/Time     -- 5
-                        //  unsigned char      Test_LIQUType;           // Testing Liquid种类  -- 1
-                        //  unsigned int       Test_LIQUConsistence;    // Testing Liquid浓度  -- 2
-                        //  unsigned char      Test_Filter_type;        // 测量用过滤器的种类  筒式/平板/囊式/Other  -- 1  
-                        //  unsigned short     Test_Filter_Config;      // 过滤材料的规格（或平板滤器的直径） （2.5",5“，10”，20“，30”, 40"） -- 4
-                        //  unsigned char      Test_Filter_numer;       // Testing过滤器滤芯的数量           -- 1 
-                        //  unsigned int       Test_Filter_Area  ;      // Filter Area
-                        //  unsigned short     Test_Meme_Aper;          // 过滤材料的Aperture（精度） 如:0。22um       -- 2
-                        //  unsigned short     Test_Velocity ;          // 基本泡点Test Mode / Water Immersion 的test_time  -- 2
-                        //  unsigned int       Test_Up_Volm;            // 滤芯的Upstream Volume                           -- 4 
-                        //  unsigned short     Test_startp ;            // Start Pressure（ 滤芯的DF检测时的Pressure ）   -- 2
-                        //  unsigned short     Test_setBp  ;            // Min. BP                                 -- 2 
-                        //  unsigned short     Test_Dif_max  ;          // Max. DF                               -- 2
 
-                        // };
-
-
-
-                        ////-----------------------------------------------------------------
-                        //struct THistory_Data_Head
-                        //{
-                        //  struct TTest_Param  Htest_Para  ;             // Historical Records的Testing Args
-                        //  unsigned char       Htest_Name[32];           // Tester名
-                        //  unsigned int        Htest_DifValue ;          // Testing值1 （DF量）     
-                        //  unsigned int        Htest_TestValue ;         // Testing值2 （泡点值）  
-                        //  unsigned char       Htest_BP_Result;          // Result
-                        //  unsigned char       Htest_DIF_Result;         // Result 
-                        //  unsigned char       Htest_ALL_Result;         // Result 
-                        //  unsigned char       Htest_DiffePress ;        // Testing的Pressure差     Pressure Scale Fall ；（自检Testing，Pressure衰减）   
-                        //  unsigned char       Htest_testimes;           // 判断次数
-                        // };
 
                         table.Columns.Append(column, DataTypeEnum.adWChar, 50);
                         table.Keys.Append("FirstTablePrimaryKey", KeyTypeEnum.adKeyPrimary, column, null, null);
-                        //（1） Test_type          -------    Testing mode (M/B/A/P/D/H)    -- 1;
-                        table.Columns.Append("Htest_type", DataTypeEnum.adVarWChar, 50);//（1） Test_type          -------    Testing mode (M/B/A/P/D/H)    -- 1;
-                        table.Columns["Htest_type"].Attributes = ColumnAttributesEnum.adColNullable;//（1） Test_type          -------    Testing mode (M/B/A/P/D/H)    -- 1;
+                        //（2） Test_type          -------    测试模态 (M/B/A/P/D/H)    -- 1;
+                        table.Columns.Append("Htest_type", DataTypeEnum.adWChar, 100);//（1） Test_type          -------    测试模态 (M/B/A/P/D/H)    -- 1;
+                        table.Columns["Htest_type"].Attributes = ColumnAttributesEnum.adColNullable;//（1） Test_type          -------    测试模态 (M/B/A/P/D/H)    -- 1;
 
-                        //（2） Test_Psernum[16]   -------   product_batch_NO       -- 16     ;
-                        table.Columns.Append("Test_Psernum", DataTypeEnum.adVarWChar, 50);
+                        //（3） Test_Psernum[16]   -------   生产批号       -- 16     ;
+                        table.Columns.Append("Test_Psernum", DataTypeEnum.adWChar, 100);
                         table.Columns["Test_Psernum"].Attributes = ColumnAttributesEnum.adColNullable;
 
-                        //（3） Test_Tsernum[16]   -------   产品编号       -- 16     ;
-                        table.Columns.Append("Test_Tsernum", DataTypeEnum.adVarWChar, 50);
-                        table.Columns["Test_Tsernum"].Attributes = ColumnAttributesEnum.adColNullable;
-
-                        //（4） Test_Fsernum [16]   -------  Filter Serial Number       -- 16     ;
-                        table.Columns.Append("Test_Fsernum", DataTypeEnum.adVarWChar, 50);
-                        table.Columns["Test_Fsernum"].Attributes = ColumnAttributesEnum.adColNullable;
-
-                        //（5） Test_filt[16]        -------  Filter Material Type       -- 16     ;
-                        table.Columns.Append("Test_filt", DataTypeEnum.adVarWChar, 50);
-                        table.Columns["Test_filt"].Attributes = ColumnAttributesEnum.adColNullable;
-
-                        //（6）Test_LIQU[15]       -------  Testing Liquid       -- 15    ;
-                        table.Columns.Append("Test_LIQU", DataTypeEnum.adVarWChar, 50);
-                        table.Columns["Test_LIQU"].Attributes = ColumnAttributesEnum.adColNullable;
-                       
-                        //（7）Test_Dt[5]           -------  Date/Time       -- 5    ;
-                        table.Columns.Append("HA_STime", DataTypeEnum.adVarWChar, 50);
+                        //（4）HA_STime[5]           -------  日期/时间       -- 5    ;
+                        table.Columns.Append("HA_STime", DataTypeEnum.adWChar, 100);
                         table.Columns["HA_STime"].Attributes = ColumnAttributesEnum.adColNullable;
 
-                        //（8）Test_LIQUType      -------  Testing Liquid种类    -- 1    ;
-                        table.Columns.Append("Test_LIQUType", DataTypeEnum.adVarWChar, 50);
-                        table.Columns["Test_LIQUType"].Attributes = ColumnAttributesEnum.adColNullable;
+                        //（5） Test_Name[16]   -------   测试名称       -- 16     ;
+                        table.Columns.Append("Test_Name", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_Name"].Attributes = ColumnAttributesEnum.adColNullable;
 
-                        //（9）Test_LIQUConsistence -------  Testing Liquid浓度    -- 2    ;
-                        table.Columns.Append("Test_LIQUConsistence", DataTypeEnum.adWChar, 50);
-                        table.Columns["Test_LIQUConsistence"].Attributes = ColumnAttributesEnum.adColNullable;
+                        //（6） Test_Fsernum [16]   -------  滤芯序号       -- 16     ;
+                        table.Columns.Append("Test_Fsernum", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_Fsernum"].Attributes = ColumnAttributesEnum.adColNullable;
 
-                        //（10）Test_Filter_type ------- 测量用过滤器的种类(筒式/平板/囊式/Other) -- 1 ;
-                        table.Columns.Append("Test_Filter_type", DataTypeEnum.adVarWChar, 50);
-                        table.Columns["Test_Filter_type"].Attributes = ColumnAttributesEnum.adColNullable;
+                        //（7） Test_filt[16]        -------  滤材种类       -- 16     ;
+                        table.Columns.Append("Test_filt", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_filt"].Attributes = ColumnAttributesEnum.adColNullable;
 
-                        //（11）Test_Filter_Config  ------- 过滤材料的规格（或平板滤器的直径）  -- 2;
-                        table.Columns.Append("Test_Filter_Config", DataTypeEnum.adWChar, 50);
-                        table.Columns["Test_Filter_Config"].Attributes = ColumnAttributesEnum.adColNullable;
+                        //（8）Test_LIQU[15]       -------  测试液体       -- 15    ;
+                        table.Columns.Append("Test_LIQU", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_LIQU"].Attributes = ColumnAttributesEnum.adColNullable;
 
-                        //（12）Test_Filter_numer  -------  Testing过滤器滤芯的数量        -- 1 ;
-                        table.Columns.Append("Test_Filter_number", DataTypeEnum.adVarWChar, 50);
-                        table.Columns["Test_Filter_number"].Attributes = ColumnAttributesEnum.adColNullable;
+                        //（9）Test_Filt_Hight -------  滤芯高度    -- 2    ;
+                        table.Columns.Append("Test_Filt_Hight", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_Filt_Hight"].Attributes = ColumnAttributesEnum.adColNullable;
 
-                        //（13）Test_Filter_Area   -------  Filter Area           -- 4    ;
-                        table.Columns.Append("Test_Filter_Area", DataTypeEnum.adWChar, 50);
-                        table.Columns["Test_Filter_Area"].Attributes = ColumnAttributesEnum.adColNullable;
+                        //（10）Test_Filt_Num -------  滤芯数量    -- 2    ;
+                        table.Columns.Append("Test_Filt_Num", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_Filt_Num"].Attributes = ColumnAttributesEnum.adColNullable;
 
-                        //（14）Test_Meme_Aper  -------  过滤材料的Aperture（精度）      -- 2  ;
-                        table.Columns.Append("Test_Meme_Aper", DataTypeEnum.adWChar, 50);
-                        table.Columns["Test_Meme_Aper"].Attributes = ColumnAttributesEnum.adColNullable;
 
-                        //（15）Test_Velocity  ------- 基本泡点Test Mode / Water浸入的test_time  -- 2 ;
-                        table.Columns.Append("Test_Velocity", DataTypeEnum.adWChar, 50);
-                        table.Columns["Test_Velocity"].Attributes = ColumnAttributesEnum.adColNullable;
-
-                        //（16）Test_Up_Volm  ------- 滤芯的Upstream Volume  -- 4 ;
-                        table.Columns.Append("Test_Up_Volm", DataTypeEnum.adWChar, 50);
-                        table.Columns["Test_Up_Volm"].Attributes = ColumnAttributesEnum.adColNullable;
-
-                        //（17）Test_startp   -------  Start Pressure（ 滤芯的DF检测时的Pressure ） -- 2 ;
-                        table.Columns.Append("Test_startp", DataTypeEnum.adWChar, 50);
-                        table.Columns["Test_startp"].Attributes = ColumnAttributesEnum.adColNullable;
-
-                        //（18）Test_setBp   -------   Min. BP     -- 2 ;
-                        table.Columns.Append("Test_setBp", DataTypeEnum.adWChar, 50);
-                        table.Columns["Test_setBp"].Attributes = ColumnAttributesEnum.adColNullable;
-
-                        //（19）Test_Dif_max   -------   Max. DF   -- 2  ；
-                        table.Columns.Append("Test_Dif_max", DataTypeEnum.adWChar, 50);
-                        table.Columns["Test_Dif_max"].Attributes = ColumnAttributesEnum.adColNullable;
-
-                        //（20）Htest_Name    -------   Tester名   -- 16 ；
-                        table.Columns.Append("Htest_Name", DataTypeEnum.adWChar, 50);
-                        table.Columns["Htest_Name"].Attributes = ColumnAttributesEnum.adColNullable;
-
-                        //（21）Htest_DifValue    -------   Testing值1 （DF量）-- 2  ；
-                        table.Columns.Append("Htest_DifValue", DataTypeEnum.adWChar, 50);
-                        table.Columns["Htest_DifValue"].Attributes = ColumnAttributesEnum.adColNullable;
-
-                        //（22）Htest_TestValue    -------   Testing值2 （泡点值）-- 2  ；
-                        table.Columns.Append("Htest_Value", DataTypeEnum.adWChar, 50);
-                        table.Columns["Htest_Value"].Attributes = ColumnAttributesEnum.adColNullable;
-
-                        //（23）Htest_BP_Result    -------   Result  -- 1 ;
-                        table.Columns.Append("Htest_BP_Result", DataTypeEnum.adVarWChar, 50);
-                        table.Columns["Htest_BP_Result"].Attributes = ColumnAttributesEnum.adColNullable;
-
-                        //（24）Htest_DIF_Result   -------   Result  -- 1 ;
-                        table.Columns.Append("Htest_DIF_Result", DataTypeEnum.adVarWChar, 50);
-                        table.Columns["Htest_DIF_Result"].Attributes = ColumnAttributesEnum.adColNullable;
-
-                        //（25）Htest_ALL_Result  -------   Result  -- 1 ;
-                        table.Columns.Append("Test_Result", DataTypeEnum.adVarWChar, 50);
+                        //（11）Test_Result -------  测试结果    -- 2    ;
+                        table.Columns.Append("Test_Result", DataTypeEnum.adWChar, 100);
                         table.Columns["Test_Result"].Attributes = ColumnAttributesEnum.adColNullable;
 
-                        //（26）Htest_DiffePress ------ Testing的Pressure Scale Fall ；（自检Testing，Pressure衰减）-- 2；
-                        table.Columns.Append("Htest_DiffePress", DataTypeEnum.adVarWChar, 50);
+                        //（12）Test_startp   -------  起测压力（ 滤芯的扩散流检测时的压力 ） -- 2 ;
+                        table.Columns.Append("Test_startp", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_startp"].Attributes = ColumnAttributesEnum.adColNullable;
+
+
+                        //（13）Test_SetBp   -------   最小泡点     -- 2 ;
+                        table.Columns.Append("Test_SetBp", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_SetBp"].Attributes = ColumnAttributesEnum.adColNullable;
+
+                        //（14）Test_Up_Volm  ------- 滤芯的上游体积  -- 4 ;
+                        table.Columns.Append("Test_Up_Volm", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_Up_Volm"].Attributes = ColumnAttributesEnum.adColNullable;
+
+
+                        //（15）Test_Dif_max   -------   最大扩散流   -- 2  ；
+                        table.Columns.Append("Test_Dif_max", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_Dif_max"].Attributes = ColumnAttributesEnum.adColNullable;
+
+                        //（16）Htest_DifValue    -------   测试值1 （扩散流量）-- 2  ；
+                        table.Columns.Append("Htest_DifValue", DataTypeEnum.adWChar, 100);
+                        table.Columns["Htest_DifValue"].Attributes = ColumnAttributesEnum.adColNullable;
+
+                        //（17）Htest_TestValue    -------   测试值2 （泡点值）-- 2  ；
+                        table.Columns.Append("Htest_Value", DataTypeEnum.adWChar, 100);
+                        table.Columns["Htest_Value"].Attributes = ColumnAttributesEnum.adColNullable;
+
+                        //（18）Test_Filter_Area   -------  过滤面积           -- 4    ;
+                        table.Columns.Append("Test_Filter_Area", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_Filter_Area"].Attributes = ColumnAttributesEnum.adColNullable;
+
+
+                        //（19）Test_Meme_Aper  -------  过滤材料的孔径（精度）      -- 2  ;
+                        table.Columns.Append("Test_Meme_Aper", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_Meme_Aper"].Attributes = ColumnAttributesEnum.adColNullable;
+
+
+                        //（20）Test_Filter_type ------- 测量用过滤器的种类(筒式/平板/囊式/其它) -- 1 ;
+                        table.Columns.Append("Test_Filter_type", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_Filter_type"].Attributes = ColumnAttributesEnum.adColNullable;
+
+
+                        //（21）Htest_DiffePress ------ 测试的压力衰减值 ；（自检测试，压力衰减）-- 2；
+                        table.Columns.Append("Htest_DiffePress", DataTypeEnum.adWChar, 100);
                         table.Columns["Htest_DiffePress"].Attributes = ColumnAttributesEnum.adColNullable;
 
-                        //（27）Htest_testimes  -------   Chart的采样次数  -- 1 ;固定为61次
-                        table.Columns.Append("Test_testimes", DataTypeEnum.adVarWChar, 50);
+                        //（22）Test_CDifValue  ------- 用于计算的最大扩散流  -- 2;
+                        table.Columns.Append("Test_CDifValue", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_CDifValue"].Attributes = ColumnAttributesEnum.adColNullable;
+
+                        //（23）Htest_testimes  -------   曲线的采样次数  -- 1 ;固定为61次
+                        table.Columns.Append("Test_testimes", DataTypeEnum.adWChar, 100);
                         table.Columns["Test_testimes"].Attributes = ColumnAttributesEnum.adColNullable;
 
-                        //Chart的点
-                        table.Columns.Append("p0", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p0"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p1", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p1"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p2", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p2"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p3", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p3"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p4", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p4"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p5", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p5"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p6", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p6"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p7", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p7"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p8", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p8"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p9", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p9"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p10", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p10"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p11", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p11"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p12", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p12"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p13", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p13"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p14", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p14"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p15", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p15"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p16", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p16"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p17", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p17"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p18", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p18"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p19", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p19"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p20", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p20"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p21", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p21"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p22", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p22"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p23", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p23"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p24", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p24"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p25", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p25"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p26", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p26"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p27", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p27"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p28", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p28"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p29", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p29"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p30", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p30"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p31", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p31"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p32", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p32"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p33", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p33"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p34", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p34"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p35", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p35"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p36", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p36"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p37", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p37"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p38", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p38"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p39", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p39"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p40", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p40"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p41", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p41"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p42", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p42"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p43", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p43"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p44", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p44"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p45", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p45"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p46", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p46"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p47", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p47"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p48", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p48"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("p49", DataTypeEnum.adVarWChar, 5);
-                        table.Columns["p49"].Attributes = ColumnAttributesEnum.adColNullable;
-                       
+                        //（24）Test_Sampling_Frequency  ------- 曲线的采样点的频率  -- 2 ;
+                        table.Columns.Append("Test_Sampling_Frequency", DataTypeEnum.adWChar, 100);
+                        table.Columns["Test_Sampling_Frequency"].Attributes = ColumnAttributesEnum.adColNullable;
+
+
+                        //（25）Htest_DifStart ------ 曲线的采样数组中扩散流的起始位置-- 2；
+                        table.Columns.Append("Htest_DifStart", DataTypeEnum.adWChar, 100);
+                        table.Columns["Htest_DifStart"].Attributes = ColumnAttributesEnum.adColNullable;
+
+
+                        //（26）Htest_Name    -------   测试人员名   -- 16 ；
+                        table.Columns.Append("Htest_Name", DataTypeEnum.adWChar, 100);
+                        table.Columns["Htest_Name"].Attributes = ColumnAttributesEnum.adColNullable;
+
+
+                        //（25）Htest_Press_Line ------ 压力的曲线值-- 2；
+                        table.Columns.Append("Htest_Press_Line", DataTypeEnum.adWChar, 250);
+                        table.Columns["Htest_Press_Line"].Attributes = ColumnAttributesEnum.adColNullable;
+
+
+                        //（26）Htest_Dif_Line    -------   扩散流的曲线值   -- 16 ；
+                        table.Columns.Append("Htest_Dif_Line", DataTypeEnum.adWChar, 250);
+                        table.Columns["Htest_Dif_Line"].Attributes = ColumnAttributesEnum.adColNullable;
+
+                        //曲线的点
                         try
                         {
-
                             catalog.Tables.Append(table);
-
                         }
 
                         catch (Exception ex)
                         {
-
                             MessageBox.Show(ex.Message);
-
                         }
 
                         //此处一定要关闭连接，否则添加数据时候会出错
@@ -855,7 +720,7 @@ namespace SunManage
                 mConnection.Close();
                 cn.Close();
 
-                //New Device参数数据库表
+                //新建设备参数数据库表
 
 
                 ADOX.Catalog mCatalog = new Catalog();
@@ -885,62 +750,62 @@ namespace SunManage
                         //ADOX.Column column = new ADOX.Column();
                         table.Keys.Append("FirstTablePrimaryKey", KeyTypeEnum.adKeyPrimary, column, null, null);
                         //                        //------------------------------------------------------------------------------------------------------------------
-                        //struct filter_Difmax_Param               // ------ (12) 10“各种滤材的Max. DF参数
+                        //struct filter_Difmax_Param               // ------ (12) 10“各种滤材的最大扩散流参数
                         //{
-                        //  unsigned short     PES_Dif_max          ;        // 单芯10“PES滤芯的Max. DF                                -- 2
-                        //  unsigned short     PVDF_Dif_max         ;        // 单芯10“聚偏氟乙烯滤芯的Max. DF                         -- 2
-                        //  unsigned short     PTFE_Dif_max         ;        // 单芯10“聚四氟乙烯（空气过滤）滤芯的Max. DF             -- 2
-                        //  unsigned short     NYLON_Dif_max        ;        // 单芯10“尼龙滤芯的Max. DF                               -- 2
-                        //  unsigned short     OTHER_Dif_max        ;        // 单芯10“Other材质的滤芯的Max. DF                         -- 2
-                        //  unsigned short     PTFE_flow_max        ;        // 滤单芯10“聚四氟乙烯（空气过滤-Water浸入法）滤芯的最大流量    -- 2          
+                        //  unsigned short     PES_Dif_max          ;        // 单芯10“PES滤芯的最大扩散流                                -- 2
+                        //  unsigned short     PVDF_Dif_max         ;        // 单芯10“聚偏氟乙烯滤芯的最大扩散流                         -- 2
+                        //  unsigned short     PTFE_Dif_max         ;        // 单芯10“聚四氟乙烯（空气过滤）滤芯的最大扩散流             -- 2
+                        //  unsigned short     NYLON_Dif_max        ;        // 单芯10“尼龙滤芯的最大扩散流                               -- 2
+                        //  unsigned short     OTHER_Dif_max        ;        // 单芯10“其它材质的滤芯的最大扩散流                         -- 2
+                        //  unsigned short     PTFE_flow_max        ;        // 滤单芯10“聚四氟乙烯（空气过滤-水浸入法）滤芯的最大流量    -- 2          
                         // } ;
 
-                        table.Columns.Append("PES_Dif_max", DataTypeEnum.adVarWChar, 10);
+                        table.Columns.Append("PES_Dif_max", DataTypeEnum.adWChar, 10);
                         table.Columns["PES_Dif_max"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("PVDF_Dif_max", DataTypeEnum.adVarWChar, 10);
+                        table.Columns.Append("PVDF_Dif_max", DataTypeEnum.adWChar, 10);
                         table.Columns["PVDF_Dif_max"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("PTFE_Dif_max", DataTypeEnum.adVarWChar, 10);
+                        table.Columns.Append("PTFE_Dif_max", DataTypeEnum.adWChar, 10);
                         table.Columns["PTFE_Dif_max"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("NYLON_Dif_max", DataTypeEnum.adVarWChar, 10);
+                        table.Columns.Append("NYLON_Dif_max", DataTypeEnum.adWChar, 10);
                         table.Columns["NYLON_Dif_max"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("OTHER_Dif_max", DataTypeEnum.adVarWChar, 10);
+                        table.Columns.Append("OTHER_Dif_max", DataTypeEnum.adWChar, 10);
                         table.Columns["OTHER_Dif_max"].Attributes = ColumnAttributesEnum.adColNullable;
-                        //table.Columns.Append("PTFE_flow_max", DataTypeEnum.adVarWChar, 10);
+                        //table.Columns.Append("PTFE_flow_max", DataTypeEnum.adWChar, 10);
                         //table.Columns["PTFE_flow_max"].Attributes = ColumnAttributesEnum.adColNullable;
                         //                        struct Device_Param              // ------ （18）设备的基本参数
                         //{
                         //  unsigned int      Inter_Volm          ;      // -----系统的内部体积          -- 4
                         //  unsigned int      Exter_Volm          ;      // -----外部缓冲罐的体积        -- 4
-                        //  unsigned short    SourceP             ;      // -----外部的气源Pressure          -- 2
-                        //  unsigned short    AddP_extent         ;      // -----对滤芯的Pressure增幅        -- 2
-                        //  unsigned char     Print_setup         ;      // -----打印set                -- 1
-                        //  unsigned char     Over_Modesetup      ;      // -----Testing结束的方式（泡点合格后Testing结束的方式）  手动/自动   -- 1
-                        //  unsigned char     Language_setup      ;      // -----语言set                -- 1
-                        //  unsigned char     Default_Load        ;      // -----缺省值得Load            -- 1
-                        //  unsigned char     InitTestPara        ;      // -----初始化Testing Args          -- 1
-                        //  unsigned char     Test_rate           ;      // -----Testing速度的级别          -- 1
+                        //  unsigned short    SourceP             ;      // -----外部的气源压力          -- 2
+                        //  unsigned short    AddP_extent         ;      // -----对滤芯的压力增幅        -- 2
+                        //  unsigned char     Print_Setup         ;      // -----打印设置                -- 1
+                        //  unsigned char     Over_ModeSetup      ;      // -----测试结束的方式（泡点合格后测试结束的方式）  手动/自动   -- 1
+                        //  unsigned char     Language_Setup      ;      // -----语言设置                -- 1
+                        //  unsigned char     Default_Load        ;      // -----缺省值得加载            -- 1
+                        //  unsigned char     InitTestPara        ;      // -----初始化测试参数          -- 1
+                        //  unsigned char     Test_rate           ;      // -----测试速度的级别          -- 1
                         // } ;
                         //table.Columns.Append("Inter_Volm", DataTypeEnum.adInteger, 10);
                         //table.Columns["Inter_Volm"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("Exter_Volm", DataTypeEnum.adVarWChar, 10);
+                        table.Columns.Append("Exter_Volm", DataTypeEnum.adWChar, 10);
                         table.Columns["Exter_Volm"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("SourceP", DataTypeEnum.adVarWChar, 10);
+                        table.Columns.Append("SourceP", DataTypeEnum.adWChar, 10);
                         table.Columns["SourceP"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("AddP_extent", DataTypeEnum.adVarWChar, 5);
+                        table.Columns.Append("AddP_extent", DataTypeEnum.adWChar, 5);
                         table.Columns["AddP_extent"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("Print_setup", DataTypeEnum.adVarWChar, 2);
-                        table.Columns["Print_setup"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("Over_Modesetup", DataTypeEnum.adVarWChar, 2);
-                        table.Columns["Over_Modesetup"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("Language_setup", DataTypeEnum.adVarWChar, 2);
-                        table.Columns["Language_setup"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("Default_Load", DataTypeEnum.adVarWChar, 2);
+                        table.Columns.Append("Print_Setup", DataTypeEnum.adWChar, 2);
+                        table.Columns["Print_Setup"].Attributes = ColumnAttributesEnum.adColNullable;
+                        table.Columns.Append("Over_ModeSetup", DataTypeEnum.adWChar, 2);
+                        table.Columns["Over_ModeSetup"].Attributes = ColumnAttributesEnum.adColNullable;
+                        table.Columns.Append("Language_Setup", DataTypeEnum.adWChar, 2);
+                        table.Columns["Language_Setup"].Attributes = ColumnAttributesEnum.adColNullable;
+                        table.Columns.Append("Default_Load", DataTypeEnum.adWChar, 2);
                         table.Columns["Default_Load"].Attributes = ColumnAttributesEnum.adColNullable;
-                        table.Columns.Append("InitTestPara", DataTypeEnum.adVarWChar, 2);
+                        table.Columns.Append("InitTestPara", DataTypeEnum.adWChar, 2);
                         table.Columns["InitTestPara"].Attributes = ColumnAttributesEnum.adColNullable;
-                        //table.Columns.Append("Test_rate", DataTypeEnum.adVarWChar, 2);
+                        //table.Columns.Append("Test_rate", DataTypeEnum.adWChar, 2);
                         //table.Columns["Test_rate"].Attributes = ColumnAttributesEnum.adColNullable;
-                    
+
 
                         try
                         {
@@ -972,9 +837,9 @@ namespace SunManage
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Exception:" + ex.ToString(), "Tips");
+                //LogClass.WriteLogFile("Exception:" + ex.ToString());
             }
-            
+
         }
         #endregion
         #region 增加新设备

@@ -153,7 +153,7 @@ namespace SunManage.communication
                                         Htest_type = "D";
                                     }
                                     break;
-                                case "Water Immersion ":
+                                case "Water Immersion":
                                     {
                                         Htest_type = "H";
                                     }
