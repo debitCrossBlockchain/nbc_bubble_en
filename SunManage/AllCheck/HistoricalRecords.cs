@@ -304,36 +304,32 @@ namespace SunManage.AllCheck
         /// </summary>
         public DataTable GetDataSet()
         {
-
-
             DataTable mDataTable = new DataTable("ds3");
-
-
             mDataTable.Columns.Add("Htest_type", typeof(string));
             mDataTable.Columns.Add("Test_Psernum", typeof(string));
-            mDataTable.Columns.Add("Test_Tsernum", typeof(string));
+            mDataTable.Columns.Add("HA_STime", typeof(string));
+            mDataTable.Columns.Add("Test_Name", typeof(string));
             mDataTable.Columns.Add("Test_Fsernum", typeof(string));
             mDataTable.Columns.Add("Test_filt", typeof(string));
             mDataTable.Columns.Add("Test_LIQU", typeof(string));
-            mDataTable.Columns.Add("HA_STime", typeof(string));
-            mDataTable.Columns.Add("Test_LIQUType", typeof(string));
-            mDataTable.Columns.Add("Test_LIQUConsistence", typeof(string));
-            mDataTable.Columns.Add("Test_Filter_type", typeof(string));
-            mDataTable.Columns.Add("Test_Filter_Config", typeof(string));
-            mDataTable.Columns.Add("Test_Filter_number", typeof(string));
-            mDataTable.Columns.Add("Test_Filter_Area", typeof(string));
-            mDataTable.Columns.Add("Test_Meme_Aper", typeof(string));
-            mDataTable.Columns.Add("Test_Velocity", typeof(string));
-            mDataTable.Columns.Add("Test_Up_Volm", typeof(string));
+            mDataTable.Columns.Add("Test_Filt_Hight", typeof(string));
+            mDataTable.Columns.Add("Test_Filt_Num", typeof(string));
+            mDataTable.Columns.Add("Test_Result", typeof(string));
             mDataTable.Columns.Add("Test_startp", typeof(string));
-            mDataTable.Columns.Add("Test_setBp", typeof(string));
+            mDataTable.Columns.Add("Test_SetBp", typeof(string));
+            mDataTable.Columns.Add("Test_Up_Volm", typeof(string));
             mDataTable.Columns.Add("Test_Dif_max", typeof(string));
-            mDataTable.Columns.Add("Htest_Name", typeof(string));
             mDataTable.Columns.Add("Htest_DifValue", typeof(string));
             mDataTable.Columns.Add("Htest_Value", typeof(string));
-            mDataTable.Columns.Add("Test_Result", typeof(string));
+            mDataTable.Columns.Add("Test_Filter_Area", typeof(string));
+            mDataTable.Columns.Add("Test_Meme_Aper", typeof(string));
+            mDataTable.Columns.Add("Test_Filter_type", typeof(string));
             mDataTable.Columns.Add("Htest_DiffePress", typeof(string));
+            mDataTable.Columns.Add("Test_CDifValue", typeof(string));
             mDataTable.Columns.Add("Test_testimes", typeof(string));
+            mDataTable.Columns.Add("Test_Sampling_Frequency", typeof(string));
+            mDataTable.Columns.Add("Htest_DifStart", typeof(string));
+            mDataTable.Columns.Add("Htest_Name", typeof(string));
             mDataTable.Columns.Add("DeviceName", typeof(string));
 
 
@@ -351,49 +347,63 @@ namespace SunManage.AllCheck
                 if (reader.Read())
                 {
 
-
                     DataRow dr = mDataTable.NewRow();
                     dr["Htest_type"] = reader[1].ToString();
                     dr["Test_Psernum"] = reader[2].ToString();
-                    dr["Test_Tsernum"] = reader[3].ToString();
-                    dr["Test_Fsernum"] = reader[4].ToString();
-                    dr["Test_filt"] = reader[5].ToString();
-                    dr["Test_LIQU"] = reader[8].ToString();
-                    dr["HA_STime"] = reader[7].ToString();
-                    dr["Test_LIQUType"] = reader[6].ToString();
-                    dr["Test_LIQUConsistence"] = reader[9].ToString();
-                    dr["Test_Filter_type"] = reader[10].ToString();
-                    dr["Test_Filter_Config"] = reader[11].ToString();
-                    dr["Test_Filter_number"] = reader[12].ToString();
-                    dr["Test_Filter_Area"] = reader[13].ToString();
-                    dr["Test_Meme_Aper"] = reader[14].ToString();
-                    dr["Test_Velocity"] = reader[15].ToString();
-                    dr["Test_Up_Volm"] = reader[16].ToString();
-                    dr["Test_startp"] = reader[17].ToString();
-                    dr["Test_setBp"] = reader[18].ToString();
-                    dr["Test_Dif_max"] = reader[19].ToString();
-                    dr["Htest_Name"] = reader[20].ToString();
-                    dr["Htest_DifValue"] = reader[21].ToString();
-                    dr["Htest_Value"] = reader[22].ToString();
-                    dr["Test_Result"] = reader[25].ToString();
-                    dr["Htest_DiffePress"] = reader[26].ToString();
-                    dr["Test_testimes"] = reader[27].ToString();
-                    dr["DeviceName"] = mTreeView;
+                    dr["HA_STime"] = reader[3].ToString();
+                    dr["Test_Name"] = reader[4].ToString();
+                    dr["Test_Fsernum"] = reader[5].ToString();
+                    dr["Test_filt"] = reader[6].ToString();
+                    dr["Test_LIQU"] = reader[7].ToString();
+                    dr["Test_Filt_Hight"] = reader[8].ToString();
+                    dr["Test_Filt_Num"] = reader[9].ToString();
+                    dr["Test_Result"] = reader[10].ToString();
+                    dr["Test_startp"] = reader[11].ToString();
+                    dr["Test_SetBp"] = reader[12].ToString();
+                    dr["Test_Up_Volm"] = reader[13].ToString();
+                    string dif_max = reader[14].ToString();
+                    if (dif_max == "")
+                    {
+                        dif_max = "0";
+                    }
+                    string h_dif_max = reader[15].ToString();
+                    if (h_dif_max == "")
+                    {
+                        h_dif_max = "0";
+                    }
+                    if (reader[1].ToString() == "Water Immersion")
+                    {
+                        dr["Test_Dif_max"] = (float.Parse(dif_max) / 100).ToString();
+                        dr["Htest_DifValue"] = (float.Parse(h_dif_max) / 100).ToString();
+                        //dr["Test_CDifValue"] = (float.Parse(reader[21].ToString()) / 100).ToString();
+                    }
+                    else
+                    {
+                        dr["Test_Dif_max"] = (float.Parse(dif_max) / 10).ToString();
+                        dr["Htest_DifValue"] = (float.Parse(h_dif_max) / 10).ToString();
 
+                    }
+
+                    dr["Test_CDifValue"] = reader[21].ToString();
+                    dr["Htest_Value"] = reader[16].ToString();
+                    dr["Test_Filter_Area"] = "0." + reader[17].ToString();
+                    dr["Test_Meme_Aper"] = "0." + reader[18].ToString();
+                    dr["Test_Filter_type"] = reader[19].ToString();
+                    dr["Htest_DiffePress"] = reader[20].ToString();
+                    dr["Test_testimes"] = reader[22].ToString();
+                    dr["Test_Sampling_Frequency"] = reader[23].ToString();
+                    dr["Htest_DifStart"] = reader[24].ToString();
+                    dr["Htest_Name"] = reader[25].ToString();
+                    dr["DeviceName"] = mTreeView;
                     mDataTable.Rows.Add(dr);
 
-
                 }
-
                 reader.Close();
-
-
             }
-
             catch (Exception ex)
             {
 
-                MessageBox.Show("Exception:" + ex.ToString(), "Tips");
+                //LogClass.WriteLogFile("Exception:" + ex.ToString());
 
             }
             finally
@@ -402,10 +412,7 @@ namespace SunManage.AllCheck
                 mConnection.Close();
 
             }
-
-
             return mDataTable;
-
         }
         /// <summary>
         /// 画Chart
@@ -420,7 +427,7 @@ namespace SunManage.AllCheck
             mDataTable.Columns.Add("DataPressure", typeof(Int32));
             mDataTable.Columns.Add("DataTime", typeof(Int32));
             string mTreeView = Main.MTreeName.ToString();
-            string mQuery = "Select [p0],[p1],[p2],[p3],[p4],[p5],[p6],[p7],[p8],[p9],[p10],[p11],[p12],[p13],[p14],[p15],[p16],[p17],[p18],[p19],[p20],[p21],[p22],[p23],[p24],[p25],[p26],[p27],[p28],[p29],[p30],[p31],[p32],[p33],[p34],[p35],[p36],[p37],[p38],[p39],[p40],[p41],[p42],[p43],[p44],[p45],[p46],[p47],[p48],[p49],[p50],[p51],[p52],[p53],[p54],[p55],[p56],[p57],[p58],[p59],[p60] From {0} where TestHisData=" + mEditHistoricalIndex;
+            string mQuery = "Select Test_SetBp,Htest_Press_Line,Htest_Dif_Line  From {0} where TestHisData=" + mEditHistoricalIndex;
             mQuery = string.Format(mQuery, mTreeView);
             mConnection = new OleDbConnection(sAccessConnection);
 
@@ -431,16 +438,12 @@ namespace SunManage.AllCheck
                 OleDbDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
-
                     for (; i <= 60; i++)
                     {
 
                         if (reader[i].ToString() == "\0" || reader[i].ToString() == "")
                         {
-                            DataRow dr = mDataTable.NewRow();
-                            dr["DataPressure"] = 0;
-                            dr["DataTime"] = i;
-                            mDataTable.Rows.Add(dr);
+                        
                         }
                         else
                         {
@@ -449,15 +452,8 @@ namespace SunManage.AllCheck
                             dr["DataTime"] = i;
                             mDataTable.Rows.Add(dr);
                         }
-
-
-
                     }
-
                     reader.Close();
-
-
-
                     mConnection.Close();
                 }
             }
@@ -465,7 +461,6 @@ namespace SunManage.AllCheck
             {
                 for (; i <= 60; i++)
                 {
-
                     DataRow dr = mDataTable.NewRow();
                     dr["DataPressure"] = 0;
                     dr["DataTime"] = i;
