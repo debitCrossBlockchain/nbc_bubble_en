@@ -523,9 +523,7 @@ namespace SunManage.AllCheck
 
 
                     RecordPrinter mRecordPrinter = new RecordPrinter();
-                    mRecordPrinter.dsGet(mEditHistoricalIndex);
-
-
+                    //mRecordPrinter.dsGet(mEditHistoricalIndex);
                     mRecordPrinter.ShowDialog();
 
                 }
