@@ -180,7 +180,7 @@ namespace SunManage.communication
                         }
 
                         File.WriteAllText(saveName, str, System.Text.Encoding.GetEncoding("GB2312"));
-                  
+                        MessageBox.Show("exported file!");
                     }
 
                 }
