@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using Microsoft.Reporting.WinForms;
 //引用创建Access数据库的库
 using System.Data.OleDb;
+using System.Text.RegularExpressions;
 
 namespace SunManage.AllCheck
 {
@@ -32,14 +33,14 @@ namespace SunManage.AllCheck
         {
             try
             {
-            HistoricalRecords mHistoricalRecords = new HistoricalRecords();
+                HistoricalRecords mHistoricalRecords = new HistoricalRecords();
 
-            this.reportViewer.Reset();
-            string mTreeView = Main.MTreeName.ToString();
-            string mQuery = "Select [Htest_type] From {0} where TestHisData='" + HistoricalRecords.mPrintNo+"'";
-            mQuery = string.Format(mQuery, mTreeView);
-            mConnection = new OleDbConnection(sAccessConnection);
-         
+                this.reportViewer.Reset();
+                string mTreeView = Main.MTreeName.ToString();
+                string mQuery = "Select [Htest_type] From {0} where TestHisData='" + HistoricalRecords.mPrintNo + "'";
+                mQuery = string.Format(mQuery, mTreeView);
+                mConnection = new OleDbConnection(sAccessConnection);
+
                 if (HistoricalRecords.mPrintNo != null)
                 {
                     mConnection.Open();
@@ -86,45 +87,36 @@ namespace SunManage.AllCheck
                                 }
                                 break;
                             default: break;
-
-
                         }
-
-
-
-                    
-
                         reader.Close();
-
-
-
                         mConnection.Close();
 
                     }
                 }
-               
-          
-
-           
-            reportViewer.LocalReport.DataSources.Clear();
-            reportViewer.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("DataSetRecordP", mHistoricalRecords.GetDataSet()));
-
-            reportViewer.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("DataSetCoords", DataTableGet));
-          
-
-            this.reportViewer.RefreshReport();
 
 
-            //// 将显示模式切换到打印布局模式
-            this.reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
 
-            // 将缩放模式set为百分比
-            this.reportViewer.ZoomMode = ZoomMode.Percent;
 
-            // 设为 100% 
-            this.reportViewer.ZoomPercent = 35;
-            
-        }
+                reportViewer.LocalReport.DataSources.Clear();
+                reportViewer.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("DataSetRecordP", mHistoricalRecords.GetDataSet()));
+
+                reportViewer.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("DataSetCoords", dsPGet(HistoricalRecords.mPrintNo)));
+                reportViewer.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("DataSetCoordD", dsDGet(HistoricalRecords.mPrintNo)));
+
+
+                this.reportViewer.RefreshReport();
+
+
+                //// 将显示模式切换到打印布局模式
+                this.reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
+
+                // 将缩放模式set为百分比
+                this.reportViewer.ZoomMode = ZoomMode.Percent;
+
+                // 设为 100% 
+                this.reportViewer.ZoomPercent = 35;
+
+            }
             catch (Exception ex)
             {
 
@@ -133,126 +125,210 @@ namespace SunManage.AllCheck
             }
         }
 
+        public static bool IsNumber(String strNumber)
+        {
+            Regex objNotNumberPattern = new Regex("[^0-9.-]");
+            Regex objTwoDotPattern = new Regex("[0-9]*[.][0-9]*[.][0-9]*");
+            Regex objTwoMinusPattern = new Regex("[0-9]*[-][0-9]*[-][0-9]*");
+            String strValidRealPattern = "^([-]|[.]|[-.]|[0-9])[0-9]*[.]*[0-9]+$";
+            String strValidIntegerPattern = "^([-]|[0-9])[0-9]*$";
+            Regex objNumberPattern = new Regex("(" + strValidRealPattern + ")|(" + strValidIntegerPattern + ")");
+
+            return !objNotNumberPattern.IsMatch(strNumber) &&
+                   !objTwoDotPattern.IsMatch(strNumber) &&
+                   !objTwoMinusPattern.IsMatch(strNumber) &&
+                   objNumberPattern.IsMatch(strNumber);
+        }
+
+        public static List<string> GetData(string strData)
+        {
+            List<String> listInfo = new List<string>();
+            string[] sArray = strData.Split(',');
+            foreach (string strTemp in sArray)
+            {
+                // listInfo.Add(strTemp);
+                if (IsNumber(strTemp))
+                {
+                    listInfo.Add(strTemp);
+                }
+                else if (strTemp == "")
+                {
+                    listInfo.Add("0");
+                }
+
+            }
+            return listInfo;
+        }
+
         /// <summary>
-        /// 画Chart
+        /// 画曲线
         /// </summary>
         /// <returns></returns>
-        public DataTable dsGet(string mEditHistoricalIndex)
+        public DataTable dsPGet(string mEditHistoricalIndex)
         {
-           
-           
-            DataTable mDataTable = new DataTable("ds2");
+            DataTable mDataTable = new DataTable("ds3");
 
-            mDataTable.Columns.Add("DataPressure", typeof(Int32));
-            mDataTable.Columns.Add("DataTime", typeof(Int32));
-            mDataTable.Columns.Add("Test_setBp", typeof(Int32));
-            
+            mDataTable.Columns.Add("Htest_Press_Line", typeof(Int32));
+            mDataTable.Columns.Add("Test_startp", typeof(Int32));
+            mDataTable.Columns.Add("DataTimeP", typeof(Int32));
+
             string mTreeView = Main.MTreeName.ToString();
-            string mQuery = "Select [p0],[p1],[p2],[p3],[p4],[p5],[p6],[p7],[p8],[p9],[p10],[p11],[p12],[p13],[p14],[p15],[p16],[p17],[p18],[p19],[p20],[p21],[p22],[p23],[p24],[p25],[p26],[p27],[p28],[p29],[p30],[p31],[p32],[p33],[p34],[p35],[p36],[p37],[p38],[p39],[p40],[p41],[p42],[p43],[p44],[p45],[p46],[p47],[p48],[p49],[Test_testimes],[Test_setBp],[Htest_type] From {0} where [TestHisData]='" + mEditHistoricalIndex+"'";
+            string mQuery = "Select [Htest_Press_Line],[Htest_Dif_Line],[Test_startp] From {0} where [TestHisData]='" + mEditHistoricalIndex + "'";
             mQuery = string.Format(mQuery, mTreeView);
+
             mConnection = new OleDbConnection(sAccessConnection);
             try
             {
-            if (mEditHistoricalIndex != null)
-            {
-                mConnection.Open();
-                OleDbCommand cmd = new OleDbCommand(mQuery, mConnection);
-                OleDbDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
+                if (mEditHistoricalIndex != null)
                 {
-                   
-                       
-                    
-                    for (int i = 0; i <Convert.ToInt64(reader[50]); i++)
+                    mConnection.Open();
+                    OleDbCommand cmd = new OleDbCommand(mQuery, mConnection);
+                    OleDbDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
                     {
-                        if ((reader[52].ToString() == "Diffusion Flow" )|| (reader[52].ToString() == "Pressure Holding"))
+
+                        int i = 0;
+                        int j = 0;
+                        string strDpress = reader[0].ToString();
+                        string strStartup = reader[2].ToString();
+                        List<string> temp = GetData(strDpress);
+                        int k = 0;
+                        int sum = 0;
+                        foreach (string dp in temp)
                         {
-                            if (reader[i].ToString() == "\0" || reader[i].ToString() == "")
+                            if (k > (temp.Count / 2))
                             {
-                                DataRow dr = mDataTable.NewRow();
-                                dr["DataPressure"] = 0;
-                                dr["DataTime"] = i;
-                                dr["Test_setBp"] = 0;
-
-
-                                mDataTable.Rows.Add(dr);
+                                sum = sum + Convert.ToInt32(dp);
                             }
-                            else
-                            {
-                                DataRow dr = mDataTable.NewRow();
-                                dr["DataPressure"] = Convert.ToInt32(reader[i].ToString());
-                                dr["DataTime"] = i;
-                                dr["Test_setBp"] = 0;
-                                mDataTable.Rows.Add(dr);
-                            }
-                           
+                            k++;
+                        }
+
+                        int length = 0;
+                        if (sum == 0)
+                        {
+                            length = temp.Count / 5;
                         }
                         else
                         {
-                           
-                            if (reader[i].ToString() == "\0" || reader[i].ToString() == "")
+                            length = temp.Count / 2;
+                        }
+                        foreach (string dp in temp)
+                        {
+                            DataRow dr = mDataTable.NewRow();
+                            if ((Convert.ToInt32(dp) == 0) && (j > length))
                             {
-
-                                DataRow dr = mDataTable.NewRow();
-                                dr["DataPressure"] = 0;
-                                dr["DataTime"] = i;
-                                if (reader[51].ToString() == "\0" || reader[51].ToString() == "")
-                                {
-                                    dr["Test_setBp"] = 0;
-                                }
-                                else
-                                {
-                                    dr["Test_setBp"] = Convert.ToInt64(reader[51]);
-                                }
-                                mDataTable.Rows.Add(dr);
                             }
                             else
                             {
-                                DataRow dr = mDataTable.NewRow();
-                                dr["DataPressure"] = Convert.ToInt32(reader[i].ToString().Trim());
-                                dr["DataTime"] = i;
-                                if (reader[51].ToString() == "\0" || reader[51].ToString() == "")
+                                dr["Htest_Press_Line"] = Convert.ToInt32(dp);
+                                dr["Test_startp"] = Convert.ToInt32(strStartup);
+                                dr["DataTimeP"] = i++;
+                                mDataTable.Rows.Add(dr);
+                            }
+                            j++;
+                        }
+
+                    }
+                    reader.Close();
+                    mConnection.Close();
+
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+            return mDataTable;
+        }
+
+        public DataTable dsDGet(string mEditHistoricalIndex)
+        {
+            DataTable mDataTable = new DataTable("ds4");
+
+            mDataTable.Columns.Add("Htest_Dif_Line", typeof(Int32));
+            mDataTable.Columns.Add("DataTimeD", typeof(Int32));
+
+            string mTreeView = Main.MTreeName.ToString();
+            string mQuery = "Select [Htest_Press_Line],[Htest_Dif_Line],[Test_startp] From {0} where [TestHisData]='" + mEditHistoricalIndex + "'";
+            mQuery = string.Format(mQuery, mTreeView);
+
+            mConnection = new OleDbConnection(sAccessConnection);
+            try
+            {
+                if (mEditHistoricalIndex != null)
+                {
+                    mConnection.Open();
+                    OleDbCommand cmd = new OleDbCommand(mQuery, mConnection);
+                    OleDbDataReader reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        int j = 0;
+                        List<string> strDif = GetData(reader[1].ToString());
+                        if (strDif.Count == 0)
+                        {
+                            DataRow dk = mDataTable.NewRow();
+                            dk["Htest_Dif_Line"] = 0;
+                            dk["DataTimeD"] = 1;
+                            mDataTable.Rows.Add(dk);
+                        }
+                        int k = 0;
+                        int sum = 0;
+                        foreach (string dp in strDif)
+                        {
+                            if (k > (strDif.Count / 2))
+                            {
+                                sum = sum + Convert.ToInt32(dp);
+                            }
+                            k++;
+                        }
+
+                        int m = 0;
+                        int length = 0;
+                        if (sum == 0)
+                        {
+                            length = strDif.Count / 5;
+                        }
+                        else
+                        {
+                            length = strDif.Count / 2;
+                        }
+
+                        foreach (string dp in strDif)
+                        {
+                            DataRow dk = mDataTable.NewRow();
+                            if (string.IsNullOrWhiteSpace(dp) || string.IsNullOrEmpty(dp) || (dp == ""))
+                            {
+                                if (m <= length)
                                 {
-                                    dr["Test_setBp"] = 0;
+                                    dk["Htest_Dif_Line"] = 0;
+                                    dk["DataTimeD"] = j++;
+                                }
+                            }
+                            else
+                            {
+                                if ((m > length) && (Convert.ToInt32(dp) == 0))
+                                {
                                 }
                                 else
                                 {
-                                    dr["Test_setBp"] = Convert.ToInt64(reader[51]);
+
+                                    dk["Htest_Dif_Line"] = Convert.ToInt32(dp);
+                                    dk["DataTimeD"] = j++;
                                 }
-                                mDataTable.Rows.Add(dr);
                             }
+                            m++;
+                            mDataTable.Rows.Add(dk);
                         }
 
-
                     }
-
                     reader.Close();
-
-
-
                     mConnection.Close();
-           
+
                 }
             }
-            else
+            catch (Exception)
             {
-                for (int i = 0; i <= 60; i++)
-                {
-
-                    DataRow dr = mDataTable.NewRow();
-                    dr["DataPressure"] = 0;
-                    dr["DataTime"] = i;
-                    mDataTable.Rows.Add(dr);
-                }
             }
-            }
-            catch(Exception)
-            {
-               
-            }
-
-            DataTableGet = mDataTable;
-
             return mDataTable;
         }
 
@@ -261,7 +337,7 @@ namespace SunManage.AllCheck
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-       
+
 
         private void RecordPrinter_FormClosed(object sender, FormClosedEventArgs e)
         {
